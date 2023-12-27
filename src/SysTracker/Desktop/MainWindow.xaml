@@ -3,10 +3,58 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Desktop"
+        xmlns:viewmodel="clr-namespace:SysTracker.Desktop.ViewModels"
+        xmlns:views="clr-namespace:SysTracker.Desktop.Views"
+        xmlns:local="clr-namespace:SysTracker.Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="450" MinWidth="800" ResizeMode="NoResize">
-    <Grid>
-
-    </Grid>
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="SysTracker"
+        MinHeight="350"
+        MinWidth="600" 
+        Height="450"
+        Width="700"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="{x:Null}">
+    <Border Background="#0a0a0a" CornerRadius="5" MouseDown="Main_MouseDown">
+        <Grid Margin="20 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid VerticalAlignment="Center">
+                <TextBlock FontSize="20"
+                           Foreground="#FFFFFF">SysTracker</TextBlock>
+                <TextBlock HorizontalAlignment="Right"
+                           Foreground="#5B2828"
+                           FontWeight="Black"
+                           VerticalAlignment="Center"
+                           FontSize="20"
+                           MouseDown="Close_MouseDown"
+                           MouseEnter="Close_MouseEnter"
+                           MouseLeave="Close_MouseLeave">X</TextBlock>
+            </Grid>
+            <StackPanel Orientation="Horizontal" Margin="0 20 0 0" Grid.Row="1">
+                <RadioButton GroupName="Content" IsChecked="True" Style="{StaticResource RadioSelector}" Content="General"></RadioButton>
+                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="CPU"></RadioButton>
+                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="GPU"></RadioButton>
+                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="RAM"></RadioButton>
+                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="Disk"></RadioButton>
+            </StackPanel>
+            <ContentControl Grid.Row="2" Content="{Binding CurrentViewModel}">
+                <ContentControl.Resources>
+                    <DataTemplate DataType="{x:Type viewmodel:GeneralViewModel}">
+                        <views:GeneralView/>
+                    </DataTemplate>
+                </ContentControl.Resources>
+            </ContentControl>
+            <StackPanel Grid.Row="3">
+                <TextBlock Foreground="#FF7D7D7D">Prod. by zmqp, see my github: <Hyperlink NavigateUri="https://github.com/prn-ic" RequestNavigate="GithubProfile_RequestNavigate">https://github.com/prn-ic</Hyperlink></TextBlock>
+                
+            </StackPanel>
+        </Grid>
+    </Border>
 </Window>

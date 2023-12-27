@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="SysTracker.Desktop.Views.GeneralView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SysTracker.Desktop.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Foreground="#FFFFFF" FontSize="24" Margin="0 0 0 50">Common system information</TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                <Border BorderBrush="White" BorderThickness="10" Width="150" Height="150" CornerRadius="300">
+
+                </Border>
+                <Ellipse
+        Width="150"
+        Height="150"
+        Canvas.Left="32"
+        Canvas.Top="33"
+        Stretch="Fill" Stroke="#AF2F2F" StrokeThickness="10" RenderTransformOrigin="0.5, 0.5">
+                    <Ellipse.Clip>
+                        <RectangleGeometry Rect="0,75,150,75"/>
+                    </Ellipse.Clip>
+                    <Ellipse.RenderTransform>
+                        <RotateTransform Angle="{Binding CpuDiagramAngle}"></RotateTransform>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Border Background="#0a0a0a" Height="75"  VerticalAlignment="Top" Margin="0,76,0,0">
+
+                </Border>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 50">
+                    <TextBlock Foreground="#FFFFFF" FontSize="20" Text="{Binding Cpu.LoadPercentage}"></TextBlock>
+                    <TextBlock Foreground="#FFFFFF" FontSize="20">%</TextBlock>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 0">
+                    <TextBlock Foreground="#FFFFFF" FontSize="20" HorizontalAlignment="Center">CPU</TextBlock>
+                    <TextBlock Foreground="#FF7D7D7D" FontSize="12" HorizontalAlignment="Center" Text="{Binding Cpu.Name}" MaxWidth="100" TextTrimming="WordEllipsis" TextWrapping="WrapWithOverflow"></TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Foreground="#FF7D7D7D" FontSize="12" HorizontalAlignment="Center" Text="{Binding Cpu.Capacity}"></TextBlock>
+                        <TextBlock Foreground="#FF7D7D7D" FontSize="12" HorizontalAlignment="Center"> Hz</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                <Border BorderBrush="White" BorderThickness="10" Width="150" Height="150" CornerRadius="300">
+
+                </Border>
+                <Ellipse
+Width="150"
+Height="150"
+Canvas.Left="32"
+Canvas.Top="33"
+Stretch="Fill" Stroke="#AF2F2F" StrokeThickness="10" RenderTransformOrigin="0.5, 0.5">
+                    <Ellipse.Clip>
+                        <RectangleGeometry Rect="0,75,150,75"/>
+                    </Ellipse.Clip>
+                    <Ellipse.RenderTransform>
+                        <RotateTransform Angle="{Binding RamDiagramAngle}"></RotateTransform>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Border Background="#0a0a0a" Height="75"  VerticalAlignment="Top" Margin="0,76,0,0">
+
+                </Border>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 50">
+                    <TextBlock Foreground="#FFFFFF" FontSize="20" Text="{Binding Ram.Percentage}"></TextBlock>
+                    <TextBlock Foreground="#FFFFFF" FontSize="20">%</TextBlock>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 15">
+                    <TextBlock Foreground="#FFFFFF" FontSize="20" HorizontalAlignment="Center">RAM</TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Foreground="#FF7D7D7D" FontSize="12" HorizontalAlignment="Center" Text="{Binding Ram.Capacity}"></TextBlock>
+                        <TextBlock Foreground="#FF7D7D7D" FontSize="12" HorizontalAlignment="Center"> Mb</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+        </StackPanel>
+    </StackPanel>
+</UserControl>
