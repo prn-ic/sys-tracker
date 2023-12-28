@@ -6,23 +6,9 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <AssemblyName>SysTracker.Desktop</AssemblyName>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <RootNamespace>SysTracker.Desktop</RootNamespace>
-    <ApplicationIcon>Resources\Icons\favicon.ico</ApplicationIcon>
-    <SignAssembly>False</SignAssembly>
-    <Authors>zmqpkyf</Authors>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>portable</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>portable</DebugType>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="Resources\Icons\favicon.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
