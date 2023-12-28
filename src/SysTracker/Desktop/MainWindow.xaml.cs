@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using SysTracker.Desktop.ViewModels;
 
 namespace SysTracker.Desktop;
 /// <summary>
@@ -39,4 +40,10 @@ public partial class MainWindow : Window
         Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri) { UseShellExecute = true });
         e.Handled = true;
     }
+
+    private void OpenGeneral_Click(object sender, RoutedEventArgs e) =>
+        NavigationStore.CurrentViewModel = new GeneralViewModel();
+
+    private void OpenCpu_Click(object sender, RoutedEventArgs e) =>
+        NavigationStore.CurrentViewModel = new CpuViewModel();
 }
