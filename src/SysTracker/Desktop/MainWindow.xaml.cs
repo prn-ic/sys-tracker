@@ -46,4 +46,7 @@ public partial class MainWindow : Window
 
     private void OpenCpu_Click(object sender, RoutedEventArgs e) =>
         NavigationStore.CurrentViewModel = new CpuViewModel();
+
+    private void OpenGpu_Click(object sender, RoutedEventArgs e) =>
+        NavigationStore.CurrentViewModel = new GpuViewModel();
 }

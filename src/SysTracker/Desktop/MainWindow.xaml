@@ -40,7 +40,7 @@
             <StackPanel Orientation="Horizontal" Margin="0 20 0 0" Grid.Row="1">
                 <RadioButton GroupName="Content" Click="OpenGeneral_Click" IsChecked="True" Style="{StaticResource RadioSelector}" Content="General"></RadioButton>
                 <RadioButton GroupName="Content" Click="OpenCpu_Click" Style="{StaticResource RadioSelector}" Content="CPU"></RadioButton>
-                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="GPU"></RadioButton>
+                <RadioButton GroupName="Content" Click="OpenGpu_Click" Style="{StaticResource RadioSelector}" Content="GPU"></RadioButton>
                 <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="RAM"></RadioButton>
                 <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="Disk"></RadioButton>
             </StackPanel>
@@ -51,6 +51,9 @@
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type viewmodel:CpuViewModel}">
                         <views:CpuView/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type viewmodel:GpuViewModel}">
+                        <views:GpuView/>
                     </DataTemplate>
                 </ContentControl.Resources>
             </ContentControl>

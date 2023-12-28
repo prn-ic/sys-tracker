@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace SysTracker.Application.Services.TableGenerator;
+namespace SysTracker.Desktop.Services.InfoViewer.Models;
 public class SmallTableModel
 {
     public string Title { get; set; } = "Undefined";
