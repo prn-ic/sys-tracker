@@ -38,7 +38,7 @@ public class HardwareInformationService : IHardwareInformationService
             cpu.Cores = (uint) obj["NumberOfCores"];
             cpu.Threads = (uint) obj["ThreadCount"];
             cpu.DeviceId = obj["DeviceID"].ToString();
-            cpu.LoadPercentage = (ushort) obj["LoadPercentage"];
+            cpu.LoadPercentage = (ushort) (obj["LoadPercentage"] ?? (ushort) 0);
             cpu.Capacity = (uint) obj["MaxClockSpeed"];
         }
 
