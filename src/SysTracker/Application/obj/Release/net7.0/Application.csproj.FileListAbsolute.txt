@@ -1,0 +1,16 @@
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\bin\Release\net7.0\SysTracker.Application.deps.json
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\bin\Release\net7.0\SysTracker.Application.dll
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\bin\Release\net7.0\SysTracker.Application.pdb
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\bin\Release\net7.0\SysTracker.Core.dll
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\bin\Release\net7.0\SysTracker.Core.pdb
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.csproj.AssemblyReference.cache
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.AssemblyInfoInputs.cache
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.AssemblyInfo.cs
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.sourcelink.json
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\Application.csproj.CopyComplete
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\SysTracker.Application.dll
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\refint\SysTracker.Application.dll
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\SysTracker.Application.pdb
+C:\Users\zmqpkyf\Documents\github\sys-tracker\src\SysTracker\Application\obj\Release\net7.0\ref\SysTracker.Application.dll

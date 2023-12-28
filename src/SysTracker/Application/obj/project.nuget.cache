@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fmlwYqEtAglL3iTm2UY989P+mDMKzBW6bUlI2rm+OMPnB2jQzNsylJcYQwuvH7Bw3R94BkP790Aatr996kh/5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zmqpkyf\\Documents\\github\\sys-tracker\\src\\SysTracker\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0\\system.diagnostics.performancecounter.8.0.0.nupkg.sha512",
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\zmqpkyf\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
