@@ -19,5 +19,4 @@ jobs:
       run: |
             ls
             cd src/SysTracker 
-            dotnet restore
             dotnet build
