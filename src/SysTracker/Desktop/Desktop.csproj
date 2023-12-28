@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <AssemblyName>SysTracker.Desktop</AssemblyName>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <RootNamespace>SysTracker.Desktop</RootNamespace>
   </PropertyGroup>
 
