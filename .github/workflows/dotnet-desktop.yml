@@ -1,0 +1,23 @@
+name: Build solutions
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+  
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the solution
+      run: |
+            ls
+            cd src/SysTracker 
+            dotnet restore
+            dotnet build
