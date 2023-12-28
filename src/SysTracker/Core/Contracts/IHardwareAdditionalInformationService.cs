@@ -5,4 +5,5 @@ public interface IHardwareAdditionalInformationService
 {
     CpuAdditional GetProcessorInfo();
     GpuAdditional GetVideoInfo();
+    RamAdditional GetMemoryInfo();
 }

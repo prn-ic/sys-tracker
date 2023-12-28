@@ -7,6 +7,14 @@ namespace SysTracker.Application.Realizations.Windows;
 
 public class HardwareAdditionalInformationService : IHardwareAdditionalInformationService
 {
+    public RamAdditional GetMemoryInfo()
+    {
+        ManagementObjectSearcher objvide = new ManagementObjectSearcher("select * from Win32_PhysicalMemory");
+
+        RamAdditional ram = new RamAdditional(objvide.Get());
+
+        return ram;
+    }
 #pragma warning disable CA1416 // Validate platform compatibility
     public CpuAdditional GetProcessorInfo()
     {

@@ -41,8 +41,8 @@
                 <RadioButton GroupName="Content" Click="OpenGeneral_Click" IsChecked="True" Style="{StaticResource RadioSelector}" Content="General"></RadioButton>
                 <RadioButton GroupName="Content" Click="OpenCpu_Click" Style="{StaticResource RadioSelector}" Content="CPU"></RadioButton>
                 <RadioButton GroupName="Content" Click="OpenGpu_Click" Style="{StaticResource RadioSelector}" Content="GPU"></RadioButton>
-                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="RAM"></RadioButton>
-                <RadioButton GroupName="Content" Style="{StaticResource RadioSelector}" Content="Disk"></RadioButton>
+                <RadioButton GroupName="Content" Click="OpenRam_Click" Style="{StaticResource RadioSelector}" Content="RAM"></RadioButton>
+                <RadioButton GroupName="Content" Click="OpenSystem_Click" Style="{StaticResource RadioSelector}" Content="OS"></RadioButton>
             </StackPanel>
             <ContentControl Grid.Row="2" Content="{Binding CurrentViewModel}">
                 <ContentControl.Resources>
@@ -54,6 +54,12 @@
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type viewmodel:GpuViewModel}">
                         <views:GpuView/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type viewmodel:RamViewModel}">
+                        <views:RamView/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type viewmodel:SystemViewModel}">
+                        <views:SystemView/>
                     </DataTemplate>
                 </ContentControl.Resources>
             </ContentControl>

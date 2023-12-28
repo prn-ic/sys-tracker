@@ -49,4 +49,10 @@ public partial class MainWindow : Window
 
     private void OpenGpu_Click(object sender, RoutedEventArgs e) =>
         NavigationStore.CurrentViewModel = new GpuViewModel();
+
+    private void OpenRam_Click(object sender, RoutedEventArgs e) =>
+        NavigationStore.CurrentViewModel = new RamViewModel();
+
+    private void OpenSystem_Click(object sender, RoutedEventArgs e) =>
+        NavigationStore.CurrentViewModel = new SystemViewModel();
 }

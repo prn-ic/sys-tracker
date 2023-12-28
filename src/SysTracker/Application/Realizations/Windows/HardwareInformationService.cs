@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Management;
+﻿using System.Management;
 using SysTracker.Core.Contracts;
 using SysTracker.Core.Entities;
 
