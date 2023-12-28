@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>SysTracker.Core</AssemblyName>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <RootNamespace>SysTracker.Core</RootNamespace>
   </PropertyGroup>
 
