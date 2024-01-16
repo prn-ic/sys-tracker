@@ -1,7 +1,6 @@
 <img src="https://github.com/prn-ic/sys-tracker/assets/81153204/8e4f993e-f42e-4168-b175-8cf1558e7cb4" width="300" />
 
-# SysTracker
-### Fork available !
+# SysTracker
 *SysTracker* - это приложение, которое позволяет посмотреть нагрузку на процессор, оперативную память и информацию об аппаратном обеспечивании. <br/><br/>
 <spoiler>*_Скриншот главной страницы_*</spoiler> <br/>
 <img src="https://github.com/prn-ic/sys-tracker/assets/81153204/7676b956-1a10-4f46-a243-2c3a4e30c145" /> <br/>
